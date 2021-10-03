@@ -15,7 +15,7 @@ The objective of this week project is to create the cover of a newspaper (main p
 
 ## Executing 
 
-You can download the project from this repository and open the 'index.html' file on your browser or you can access it clicking on its [GithubPage] (https://micaela-89.github.io/BaSD-Responsive-Design/)
+You can download the project from this repository and open the 'index.html' file on your browser or you can access it clicking on its [GithubPage](https://micaela-89.github.io/BaSD-Responsive-Design/)
 
 
 **Author:** Micaela Casais
