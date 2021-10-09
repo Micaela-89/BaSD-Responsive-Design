@@ -35,7 +35,7 @@ header time {
     align-self: flex-end;
     font-size: 14px;
     font-weight:600;
-    margin: 10px 5px;
+    margin: 10px 10px;
 }
 /*NavBar section*/
 .burgerMenu {
@@ -89,6 +89,7 @@ header time {
 .mainImg{
     width: 70%;
     height: auto;
+    margin-bottom: 10px;
 }
 .article h2, h3{
     width: 100%;
@@ -140,7 +141,7 @@ header time {
     height: auto;
     border: 1px white;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     background-color:#c5e0c7;
 }
@@ -186,6 +187,10 @@ footer {
 }
 /* TABLET SCREEN CODE */
 @media only screen and (min-width: 600px) {
+/*Header section*/
+    header time {
+        margin: 10px 15px;
+    }
 /*NavBar section*/
     .burgerMenu {
         display: none;
