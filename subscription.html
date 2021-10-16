@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/styles2.css">
+        <title>Subscription Form</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="title">Welcome to Aussie News</h1>
+                <time>October 2, 2021.</time>
+            </div>
+            <nav class="burgerMenu">
+                <a href=""><img src="./assets/burgerIcon2.png" alt="Burger Menu"></a>
+            </nav>
+            <nav>
+                <ul class="mainNav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Travel</a></li>
+                    <li><a href="#">Culture</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content"></div>
+            <h2 class="subtitle">Subscription Form</h2>
+            <p class="bonus">Hola xxx</p>
+            <form id="registerForm">
+                <div id="nameDiv">
+                    <label id= "name" for="name"> Full name:</label>
+                    <input id="nameInput" class="infoInput" type="text" name="name" value="" placeholder="Name Surname"required>
+                    <div id="errorMsgName" class="errorMsg">
+                        Your name must contain at least 6 characters and a space between First name and Last name.
+                    </div>
+                </div>
+                <div id="emailDiv">
+                    <label id="eMail" for="eMail"> E-mail:</label>
+                    <input id="emailInput" class="infoInput" type="email" name="eMail" value="" placeholder="mail@gmail.com" required>
+                    <div id= "errorMsgEmail" class="errorMsg">The email is not valid.</div>
+                </div>
+                <div id="passwordDiv">
+                    <label id="password" for="password"> Password:</label>
+                    <input id="passwordInput" class="infoInput"  type="password" name="password" value=""placeholder="Create your password"required>
+                    <div id= "errorMsgPassword" class="errorMsg">
+                        Your password must be at least 8 characters long and contain letters and numbers.
+                    </div>
+                </div>
+                <div id="confirmPassDiv">
+                    <label id="confirmPass" for="confirmPass"> Confirm password:</label>
+                    <input  id="confirmPassInput" class="infoInput" type="password" name="confirmPassword" value="" placeholder="Repeat your password" required>
+                    <div id="errorMsgConfirmPass" class="errorMsg">Passwords do not match.</div>
+                </div>
+                <div id="ageDiv">
+                    <label id= "age" for="age"> Age:</label>
+                    <input id="ageInput" class="infoInput" type="number" name="age" value="" placeholder="18"required min="18">
+                    <div id="errorMsgAge" class="errorMsg">You should be 18 years old or above</div>
+                </div>
+                <div id="phoneNumDiv">
+                    <label id= "phoneNumber" for="phoneNumber"> Phone number:</label>
+                    <input id="phoneNumInput" class="infoInput" type="text" name="phoneNumber" value="" placeholder="3411234"required>
+                    <div id="errorMsgPhoneN" class="errorMsg">
+                        Number of at least 7 digits. Spaces, hyphens or parentheses not accepted.
+                    </div>
+                </div>
+                <div id="addressDiv">
+                    <label id="address" for="address">Address:</label>
+                    <input id="addressInput" class="infoInput" type="text" name="address" value="" placeholder="Street name - Number" required>
+                    <div id="errorMsgAddress" class="errorMsg">
+                        Your address must be at least 5 characters long and must contain letters, numbers and a space between.
+                    </div>
+                </div>
+                <div id="cityDiv">
+                    <label id="city" for="city">City:</label>
+                    <input id="cityInput" class="infoInput" type="text" name="city" value="" placeholder="City" required>
+                    <div id="errorMsgCity" class="errorMsg">
+                        Your city must be at least 3 characters long.
+                    </div>
+                </div>
+                <div id="postCodeDiv">
+                    <label id="postCode" for="postCode">Post Code:</label>
+                    <input id="postCodeInput" class="infoInput" type="text" name="postCode" value="" placeholder="1111" required>
+                    <div id="errorMsgPostCode" class="errorMsg">
+                        Your post code must be at least 3 characters long.
+                    </div>
+                </div>
+                <div id="dniDiv">
+                    <label id="dni" for="dni">DNI:</label>
+                    <input id="dniInput" class="infoInput" type="text" name="dni" value="" placeholder="30111222" required>
+                    <div id="errorMsgDni" class="errorMsg">
+                        Your DNI must be 7 or 8 characters long.
+                    </div>
+                </div>
+                <div class="btnDiv">
+                    <input id="submitForm" class="submitBtn" type="submit" value="Send">
+                    <input class="resetBtn" type="reset" value="Reset">
+                </div>
+            </form>
+            <div id="validationsDiv" class="validations-hidden"></div>
+        </div>
+        <footer>
+            <p> © Micaela Casais, "BaSD Project" - 2021</p>
+        </footer>
+        <script src="js/subscription.js"></script>    
+    </body>
+</html>

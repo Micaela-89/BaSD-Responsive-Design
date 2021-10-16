@@ -185,6 +185,15 @@ footer {
     font-weight:normal;
     background-color: #dfe1e3;
 }
+#subscribe p{
+    margin-bottom: 10px;
+    padding: 10px 0;
+    align-self: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    text-decoration: underline red;
+}
 /* TABLET SCREEN CODE */
 @media only screen and (min-width: 600px) {
 /*Header section*/
