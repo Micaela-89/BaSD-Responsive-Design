@@ -42,7 +42,7 @@ The validation of each field must be done in the "blur" event of each field. Fur
 
 Pressing the "Submit" button should show a pop-up box with the information loaded in the form in case all the validations have passed. If any validation failed, in addition to showing the error below each field, the error should also be displayed in the pop-up box.
 
-### Bonustask
+### Bonus task
 Add a title to the form that says "HELLO" and that as the "Full Name" field is completed, the title of the form will be modified in real time, while keys are pressed.
 
 
