@@ -45,6 +45,16 @@ Pressing the "Submit" button should show a pop-up box with the information loade
 ### Bonus task
 Add a title to the form that says "HELLO" and that as the "Full Name" field is completed, the title of the form will be modified in real time, while keys are pressed.
 
+## WEEK 6 PROJECT  - JavaScript Async & Storage'
+The objective of this week project consists of modifying the online newspaper developed in weeks 03 and 05, so that 
+when the "Send" button is clicked, the data loaded in the form is sent to a web server through an HTTP call from JavaScript. Then, a modal should indicate if the form was successful or rejected. 
+In addition, the received data must be saved in LocalStorage and reloaded the next time the screen is refreshed.
+
+## Description
+In case the data validation is correct, all the form data must be sent to the following URL: 
+http://curso-dev-2021.herokuapp.com/newsletter 
+Upon receiving the response, a modal must be displayed with a message indicating whether the newsletter subscription was successful or unsuccessful.
+If successful, the modal should also show the data received as a response from the HTTP call. 
 
 ## Executing 
 
@@ -52,8 +62,8 @@ Add a title to the form that says "HELLO" and that as the "Full Name" field is c
 2. Open the 'index.html' file on your browser.
 3. Click on the link for the subscription form., at the bottom of the page. 
 4. Fill in the fields. If it doesn't meet the requierements, an error message should appear below each field.
-5. Click on the Send Button. If fields passed all validations, a pop-up box will show you the information loaded.
-In case one or more field haven't passed the validations, a pop-up box will show you an error message.
+5. Click on the Send Button. If fields passed all validations, and the data loaded in the form was successfully sent to the web server, a modal will show you the information loaded.
+In case one or more field haven't passed the validations,and the data was not send, the modal will show you an error message.
 
 You can also access it clicking on its [GithubPage](https://micaela-89.github.io/BaSD-Responsive-Design/)
 (instead of downloading the files)
