@@ -358,7 +358,7 @@ function showErrorMsg () {
 
 //Modal with fetch call
 function modalMsg(e) {
-    var url = 'http://curso-dev-2021.herokuapp.com/newsletter?';
+    var url = 'https://curso-dev-2021.herokuapp.com/newsletter?';
     var queryParams = `name=${nameInput.value}&email=${emailInput.value}
     &password=${passwordInput.value}&confirmPassword=${confirmPasswordInput.value}&age=${ageInput.value}&phone=${phoneNumInput.value}
     &address=${addressInput.value}&city=${cityInput.value}&postalCode=${postCodeInput.value}
