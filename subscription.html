@@ -19,7 +19,7 @@
             </nav>
             <nav>
                 <ul class="mainNav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#">News</a></li>
                     <li><a href="#">Sports</a></li>
                     <li><a href="#">Travel</a></li>
@@ -99,17 +99,21 @@
                     <input id="submitBtn" class="submitBtn" type="submit" value="Send">
                 </div>
             </form>
-            <div id="validationsDiv" class="validations-hidden">
-                <h3>
-                    Subscription process successful.
-                </h3>
-                <ul id="validationsList">
-                </ul>
+            <div id="modalDiv" class="modalClass">
+                <div class="modalContent">
+                    <div class="modalHeader">
+                        <span id="closeBtn">&times;</span>
+                        <h2 id="modalTitle"></h2>
+                    </div>
+                    <div class="modalBody">
+                        <p id="modalP"></p>
+                    </div>
+                </div>   
             </div>
         </div>
         <footer>
             <p> © Micaela Casais, "BaSD Project" - 2021</p>
         </footer>
-        <script src="js/subscription.js"></script>    
+        <script src="js/subscription.js"></script>
     </body>
 </html>
