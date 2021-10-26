@@ -356,25 +356,33 @@ function showErrorMsg () {
     modalData.innerText = 'Please check your data and try again';
 }
 
-//Modal with fetch call
-function modalMsg(e) {
+// //Modal with fetch call
+function modalMsg() {
     var url = 'https://curso-dev-2021.herokuapp.com/newsletter?';
     var queryParams = `name=${nameInput.value}&email=${emailInput.value}
     &password=${passwordInput.value}&confirmPassword=${confirmPasswordInput.value}&age=${ageInput.value}&phone=${phoneNumInput.value}
     &address=${addressInput.value}&city=${cityInput.value}&postalCode=${postCodeInput.value}
     &dni=${dniInput.value}`;
     fetch(`${url}${queryParams}`)
-        .then(response =>
-            response.json())
-        .then(data => {
-            modalDivSuccess(data)
-            localStorageData()
-        })
-        .catch((error) => {
-            modalDivErr(error);
-        });
-    e.preventDefault();
-};
+    .then (function (response){
+        if (response.status === 200){
+            return response.json();
+        }
+        else{
+            return response.text()
+            .then (function (msg){
+                throw new Error(msg);
+            })
+        }
+    })
+    .then(function (data){
+        modalDivSuccess(data)
+        localStorageData()
+    })
+    .catch(function (error){
+        modalDivErr(error);
+    })
+}
 
 // Fill the inputs with saved data of local storage
 function savedDataLS() {
